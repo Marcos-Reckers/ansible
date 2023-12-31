@@ -1,6 +1,6 @@
 ---
 - name: Upgrade and Update Servers
-  hosts: Servidores
+  hosts: all
   become: true
 
   tasks:
