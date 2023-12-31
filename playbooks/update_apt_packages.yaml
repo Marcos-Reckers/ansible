@@ -1,0 +1,17 @@
+---
+- name: Upgrade and Update Servers
+  hosts: Servidores
+  become: true
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+      become: true
+
+    - name: Upgrade packages
+      apt:
+        upgrade: dist
+        autoremove: yes
+        autoclean: yes
+      become: true
