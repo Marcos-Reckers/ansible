@@ -1,0 +1,10 @@
+---
+- name: Teste de ping nos servidores
+  hosts: all
+  tasks:
+    - name: Ping nos servidores
+      ping:
+
+    - name: Exibir mensagem
+      debug:
+        msg: "Conectividade testada com sucesso!"
