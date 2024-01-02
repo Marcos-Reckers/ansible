@@ -7,9 +7,11 @@
     - name: Atualizar repositórios
       apt:
         update_cache: yes
+        force_apt_get: yes
 
     - name: Realizar upgrade dos pacotes
       apt:
         upgrade: yes
         autoremove: yes
         autoclean: yes
+        force_apt_get: yes
