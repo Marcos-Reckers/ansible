@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Ping nos servidores
-      ping: google.com
+      command: ping -c 4 google.com
 
     - name: Exibir mensagem
       debug:
