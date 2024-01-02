@@ -8,6 +8,7 @@
       apt:
         update_cache: yes
       become: true
+      become_user: sudo
 
     - name: Upgrade packages
       apt:
@@ -15,3 +16,4 @@
         autoremove: yes
         autoclean: yes
       become: true
+      become_user: sudo
